@@ -38,7 +38,7 @@ export default {
     //钉钉扫码流程：扫码成功登录后会自动跳到这个url页面，url路径会携带code，你拿到这个code，调用登录接口成功就跳转。
     //你的项目页面
 
-    let base_url = process.env.NODE_ENV === 'development' ? 'http://dev.map.fadongxi.com:8091/login' : 'https://dmap.wlmkids.work/login'
+    let base_url = process.env.NODE_ENV === 'development' ? 'http://测试环境地址/login' : 'https://正式环境地址/login'
     let url = encodeURIComponent(base_url) ;
 
     // appid 找后端要
